@@ -4,21 +4,6 @@
 #define HASH_SIZE 10
 #define DATA_SIZE 258
 
-
-
-
-/*
-	input3.txtの1行目は256文字？?
-	
-
-	条件
-	ハッシュテーブルのサイズは10とします。それ以上に追加しようとしても何も処理されないものとします。
-	各文字列の文字数は255文字を超えません。
-
-*/
-
-
-
 void trim(char* str)
 {
 	char *p;
@@ -80,7 +65,7 @@ int main(int argc, char *argv[])
 			{
 				if (isOpen(hashTable, hashNum))
 				{
-					strcpy_s(hashTable[hashNum], sizeof(char) * DATA_SIZE, str);
+					strcpy(hashTable[hashNum], str);
 					break;
 				}
 				else
