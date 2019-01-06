@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-#define HASH 10
-#define DATA 258
-
 void trim(char* str)
 {
 	char *p;
